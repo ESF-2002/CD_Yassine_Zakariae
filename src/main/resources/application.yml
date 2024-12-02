@@ -2,11 +2,11 @@ spring:
   application:
     name: tp-cd-2024
   datasource:
-    url: jdbc:postgresql://ep-crimson-block-a58m9dz8.us-east-2.aws.neon.tech/db?sslmode=require
+    url: jdbc:postgresql://ep-crimson-block-a58m9dz8.us-east-2.aws.neon.tech/db?user=db_owner&password=eNOrl60TtSmQ&sslmode=require
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
       ddl-auto: create
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-
